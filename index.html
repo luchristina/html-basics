@@ -5,10 +5,57 @@
     <title>HTML Basics</title>
   </head>
   <body>
-    <font style="font-size:18pt">
-      <!-- Using &nbsp; as a method to space out the categories -->
-      Rebecca Atwood</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="text-transform:uppercase;">shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;about&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;process&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blog&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;book&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;visit us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bag</font>
-<!-- There will be an expanded menu below that is coded through an unordered list -->
-
+    <div class="nav--desktop">
+      <div class="mobile-wrapper">
+        <div class="header-cart__wrapper hidden-lg">
+          <a href="/cart" class="CartToggle header-cart">
+            <i class="icon icon-ra_bag">::before
+            </i>
+          </a>
+          <span class="header-cart__bubble cartCount has-items cartCount-updater  hidden-count">0</span>
+        </div>
+        <div class="logo-wrapper">
+          <h1 class="h4 header-logo" itemscope itemtype="http://schema.org/Organization">
+            <a href="/" itemprop="url">
+              <i class="icon icon-ra_primary-logo">::before
+              </i>
+            </a>
+          </h1>
+        </div>
+        <a href class="menuToggle header-hamburger"></a>
+      </div>
+      <div class="header-menu nav-wrapper">
+        <ul class="main-menu accessibleNAV">
+          <li class="grandparent kids-4">
+            <a href="#" class="nav-link" id="Shop">Shop</a>
+            <a href="#" class="nav-carat">
+              <span class="plus">+</span>
+              <span class="minus">-</span>
+            </a>
+          </li>
+          <!-- Unsure what kids-0 means -->
+          <li class="child kids-0">
+            <a href="/pages/about-us" class="nav-link" id="About"About</a>
+          </li>
+          <li class="child kids-0">
+            <a href="/pages/process" class="nav-link" id="Process">Process</a>
+          </li>
+          <li class="child kids-0">
+            <a href="/pages/from-the-studio" class="nav-link" id="Blog">Blog</a>
+          </li>
+          <li class="child kids-0">
+            <a href="/pages/book" class="nav-link" id="Book">Book</a>
+          </li>
+          <li class="child kids-0">
+            <a href="/pages/visit-us" class="nav-link" id="Visit Us">Visit Us</a>
+          </li>
+          <li class="child kids-0">
+            <a href="/pages/contact" class="nav-link" id="Contact">Contact</a>
+          </li>
+          <li class="cart-text-link">
+            <a href="/cart" class="CartToggle">Bag <span class="hidden-count" id="nav-cartCountDesktop">(0)</span></a>
+          </li>
+        </ul>
+      </div>
   </body>
 </html>
